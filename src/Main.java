@@ -29,7 +29,9 @@ public void actionPerformed(ActionEvent event) {
 
 class MyDrawPanel extends JPanel {
     public void paintComponent(Graphics g) {
-        g.setColor(Color.orange);
-        g.fillRect(20, 50, 100, 100);
+        //g.setColor(Color.orange);
+        //g.fillRect(20, 50, 100, 100);
+        Image image = new ImageIcon("holo.jpg").getImage();
+        g.drawImage(image,3,4,this);
     }
 }
